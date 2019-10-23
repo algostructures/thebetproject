@@ -1,4 +1,4 @@
-package com.fastcourier.courier.Service;
+package com.fastcourier.courier.service;
 
 import com.fastcourier.courier.model.Fights;
 import com.fastcourier.courier.repository.FightRepository;

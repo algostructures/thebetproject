@@ -1,6 +1,6 @@
 package com.fastcourier.courier.controller;
 
-import com.fastcourier.courier.Service.FightsService;
+import com.fastcourier.courier.service.FightsService;
 import com.fastcourier.courier.model.Fights;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

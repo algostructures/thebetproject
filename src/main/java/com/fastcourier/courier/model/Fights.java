@@ -2,7 +2,7 @@ package com.fastcourier.courier.model;
 
 import javax.persistence.*;
 
-@Entity(name = "fights")
+@Entity
 public class Fights {
 
     @Id
@@ -11,9 +11,11 @@ public class Fights {
 
     private Long eventId;
 
-    private Long fighterOneId;
+    @ManyToOne
+    private Fighter fighterOne;
 
-    private Long fighterTwoId;
+    @ManyToOne
+    private Fighter fighterTwo;
 
     public Fights() {
     }
@@ -34,19 +36,19 @@ public class Fights {
         this.eventId = eventId;
     }
 
-    public Long getFighterOneId() {
-        return fighterOneId;
+    public Fighter getFighterOne() {
+        return fighterOne;
     }
 
-    public void setFighterOneId(Long fighterOneId) {
-        this.fighterOneId = fighterOneId;
+    public void setFighterOne(Fighter fighterOne) {
+        this.fighterOne = fighterOne;
     }
 
-    public Long getFighterTwoId() {
-        return fighterTwoId;
+    public Fighter getFighterTwo() {
+        return fighterTwo;
     }
 
-    public void setFighterTwoId(Long fighterTwoId) {
-        this.fighterTwoId = fighterTwoId;
+    public void setFighterTwo(Fighter fighterTwo) {
+        this.fighterTwo = fighterTwo;
     }
 }

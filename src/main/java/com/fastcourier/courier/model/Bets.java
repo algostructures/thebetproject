@@ -2,7 +2,7 @@ package com.fastcourier.courier.model;
 
 import javax.persistence.*;
 
-@Entity(name = "bets")
+@Entity
 public class Bets {
 
     @Id
