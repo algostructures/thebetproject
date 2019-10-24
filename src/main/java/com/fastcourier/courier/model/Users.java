@@ -19,7 +19,11 @@ public class Users {
 
     private String username;
 
+    private String password;
+
     private double score;
+
+    private boolean isAdmin;
 
     public Users() {
     }
@@ -64,6 +68,22 @@ public class Users {
         this.score = score;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public boolean isAdmin() {
+        return isAdmin;
+    }
+
+    public void setAdmin(boolean admin) {
+        isAdmin = admin;
+    }
+
     @Override
     public String toString() {
         return "Users{" +
@@ -71,7 +91,9 @@ public class Users {
                 ", oAuthToken='" + oAuthToken + '\'' +
                 ", Name='" + Name + '\'' +
                 ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
                 ", score=" + score +
+                ", isAdmin=" + isAdmin +
                 '}';
     }
 }
