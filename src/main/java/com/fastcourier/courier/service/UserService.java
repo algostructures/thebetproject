@@ -5,6 +5,8 @@ import com.fastcourier.courier.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class UserService {
 
@@ -17,6 +19,10 @@ public class UserService {
 
     public Users findUserById(Long userId) {
         return userRepository.findById(userId).get();
+    }
+
+    public List<Users> getAllUsers() {
+        return userRepository.findAll();
     }
 
 }
